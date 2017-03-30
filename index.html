@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="showcaseApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>APS Online - Video Game Showcase</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="css/app.css?3e6905d08713ba89" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700|Oswald:300,400,700|Orbitron:700" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-controller="GameListController">
+    <div class="container">
+        <header>
+            <h1>APS ONLINE&rsquo;S SPRING 17<br>VIDEO GAME DESIGN SHOWCASE</h1>
+        </header>
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>About the Showcase</h2>
+                <p>Every year, my Game Design students create games and submit them for showcase consideration. This year, we are excited to have a couple of <strong>awesome students</strong> whose games made the cut. Now, we turn to you&mdash;members of our community&mdash;to help us <strong>judge the winner</strong> and to obtain invaluable feedback.</p>
+                <p>I think this year&rsquo;s games came out awesome and I am <strong>very proud</strong> of all of our participants. Some of the games that you will be playing are the products of <strong>hundreds of hours of work</strong>. It may not look like it, but make no mistake: the process of creating even the simplest game involves a tremendous amount of <strong>hard work</strong>, <strong>persistance</strong>, and <strong>grit</strong>.</p>
+                <p>Whereas professional game designers work with hundreds of other talents artists and engineers, my students only had each other (and their teacher, of course) to confide in. I&rsquo;m not going to lie. There were struggles along the way. Many cursed their computers, the inventors of Construct 2, and even their teacher too. Yet, we <strong>survived</strong> and <strong>learned a lot</strong> in the process.</p>
+                <p>Thanks for taking the time to support us!</p>
+                <br/>
+                <p>Mr. James Colestock<br/>
+                CTE Educator / Technology Teacher<br/>
+                APS Online High School<br/>
+                <a href="mailto:jlcolestock@aurorak12.org" title="email me">jlcolestock@aurorak12.org</a><br/>
+                <a class="twitter" href="//twitter.com/JamesColestock" target="_blank" title="Follow me on Twitter">@JamesColestock</a><br/>
+                <a class="youtube" target="_blank" title="Subscribe to my YouTube channel" href="//youtube.com/c/jamescolestock">YouTube Channel</a>    
+                </p>
+            </div>
+            <div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/oovvFKcoBPw?rel=0"></iframe>
+                </div>
+                <p>Don&rsquo;t have access to YouTube? <a href="http://static.colestock.com/videos/Video_Game_Design_Showcase_Spring_2017.mp4" target="_blank">Click here</a> to watch the video.</p>
+                <br>
+                <h3>How to Participate</h3>
+                <ol>
+                    <li><strong>Navigate</strong> to <a href="http://www.apstech.org" target="_blank">www.apstech.org</a></li>
+                    <li><strong>Play</strong> each student&rsquo;s game</li>
+                    <li><strong>Vote</strong> for your favorite</li>
+                    <li><strong>Post</strong> a comment (something our students can grow from)</li>
+                    <li><strong>Share</strong> with a friend</li>
+                </ol>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2>The Finalists</h2>
+                <ul id="games">
+                    <li ng-repeat="game in games">
+                        <div class="avatar-img-container">
+                            <a href='http://game.apstech.org/{{game.path}}/' target="_blank" title="Play {{game.title}}"><img ng-src='http://game.apstech.org/images/{{game.avatar}}' alt='{{game.name}} avatar'></a>
+                        </div>
+                        <span class="game-title"><a href='http://game.apstech.org/{{game.path}}/' target="_blank" title="Play {{game.title}}">{{game.title}}</a></span>
+                        <p class="game-tagline">{{game.tagline}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <a class="typeform-share button" href="https://james834.typeform.com/to/ASfLoi" data-mode="1" target="_blank">VOTE NOW!</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="disqus_thread"></div>
+            </div>
+        </div>
+    </div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/jquery/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/angular/angular.min.js"></script>
+        <script src="dist/www-apstech-org.min.js?f74bac64c51f2ec9"></script>
+</body>
+</html>
