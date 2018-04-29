@@ -1,5 +1,5 @@
 var disqus_config = function () {
-    this.page.url = "http://www.apstech.org/index.html", this.page.identifier = "gameshowcase"
+    this.page.url = "http://www.apstech.org/", this.page.identifier = "gameshowcase18"
 };
 ! function () {
     var e = document,

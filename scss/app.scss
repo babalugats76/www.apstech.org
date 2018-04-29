@@ -1,19 +1,17 @@
 @import "_customize.scss";
 @import "_bootstrap.scss";
-
 $brand-primary-color: #c32033;
 $brand-secondary-color: #d39c35;
 $twitter-blue: #0084b4;
 $youtube-red: #c4302b;
-
+$spaceboy-blue: #1f1d44;
 .container {
     background-color: #fff;
 }
-
 header {
     h1 {
         font-family: 'Orbitron', sans-serif;
-        background-color: $brand-primary-color;
+        background-color: $spaceboy-blue;
         line-height: 1.4;
         padding: 25px;
         color: #f5f5f5;
@@ -22,16 +20,12 @@ header {
         font-weight: bold;
     }
 }
-
 .embed-responsive {
     margin-top: 21px;
     margin-bottom: 10.5px;
 }
-
 #games {
-    
     margin-left: -40px;
-    
     li {
         vertical-align: top;
         display: inline-block;
@@ -45,12 +39,11 @@ header {
         }
     }
 }
-
 a.typeform-share.button {
     display: block;
     float: none;
     cursor: default;
-    background: $brand-primary-color;
+    background: $spaceboy-blue;
     width: auto;
     margin: 40px auto 60px;
     font-size: 25px;
@@ -73,38 +66,34 @@ a.typeform-share.button {
     border-right: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
-
 a.typeform-share.button:hover {
     background: $brand-secondary-color;
     color: #ffffff;
 }
-
- a.twitter {
+a.twitter {
     color: $twitter-blue;
     &:visited {
-      color: $twitter-blue;
+        color: $twitter-blue;
     }
     &:hover {
-      color: $twitter-blue;   
+        color: $twitter-blue;
     }
     &:active {
-      color: $twitter-blue;
+        color: $twitter-blue;
     }
 }
-
- a.youtube {
+a.youtube {
     color: $youtube-red;
     &:visited {
-      color: $youtube-red;
+        color: $youtube-red;
     }
     &:hover {
-      color: $youtube-red;   
+        color: $youtube-red;
     }
     &:active {
-      color: $youtube-red;
+        color: $youtube-red;
     }
 }
-
 .game-title {
     line-height: 3.0;
     text-transform: uppercase;
@@ -112,7 +101,6 @@ a.typeform-share.button:hover {
     font-size: 24px;
     color: purple;
 }
-
 .game-tagline {
     font-family: $font-family-serif;
     font-size: 18px;

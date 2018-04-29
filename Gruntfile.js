@@ -89,7 +89,7 @@ module.exports = function (grunt) {
                 files: ['index.html']
             },
             js: {
-                files: ['src/showcase.js']  
+                files: ['src/showcase.js']
             },
             sass: {
                 files: ['scss/**/*.scss', 'scss/_customize.scss'],
@@ -103,6 +103,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-cache-bust');
-    grunt.registerTask('build', ['sass', 'copy', 'concat', 'uglify','cacheBust:assets']);
+    grunt.registerTask('style', ['sass'])
+    grunt.registerTask('build', ['sass', 'copy', 'concat', 'uglify', 'cacheBust:assets']);
     grunt.registerTask('default', ['build', 'watch']);
 }
