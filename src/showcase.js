@@ -29,10 +29,10 @@ function GameListController($scope) {
         },
         {
             name: 'Caleb',
-            title: 'We\'re Not Dead',
-            path: 'were-not-dead',
+            title: 'Millennium Ship',
+            path: 'millennium-ship',
             avatar: 'calebt-avatar-398x398.png',
-            tagline: 'What if zombies were not dead in the first place.'
+            tagline: 'Tagline goes here...'
         },
         {
             name: 'Alejandro',
