@@ -32,7 +32,7 @@ function GameListController($scope) {
             title: 'Millennium Ship',
             path: 'millennium-ship',
             avatar: 'calebt-avatar-398x398.png',
-            tagline: 'Tagline goes here...'
+            tagline: 'Fly or die...'
         },
         {
             name: 'Alejandro',
